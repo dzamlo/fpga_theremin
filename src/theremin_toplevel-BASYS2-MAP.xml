@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LogisimGoesFPGABoardMapInformation>
+<GlobalMapInformation BoardName="BASYS2" ToplevelCircuitName="theremin_toplevel"/>
+<MAPPEDCOMPONENT_1 Height="5" Key="BUS: /cathodes#Pin0" LocationX="484" LocationY="252" Width="17"/>
+<MAPPEDCOMPONENT_2 Height="12" Key="BUS: /cathodes#Pin1" LocationX="502" LocationY="255" Width="5"/>
+<MAPPEDCOMPONENT_3 Height="12" Key="BUS: /cathodes#Pin2" LocationX="502" LocationY="269" Width="5"/>
+<MAPPEDCOMPONENT_4 Height="5" Key="BUS: /cathodes#Pin3" LocationX="484" LocationY="281" Width="17"/>
+<MAPPEDCOMPONENT_5 Height="12" Key="BUS: /cathodes#Pin4" LocationX="478" LocationY="270" Width="5"/>
+<MAPPEDCOMPONENT_6 Height="12" Key="BUS: /cathodes#Pin5" LocationX="478" LocationY="256" Width="5"/>
+<MAPPEDCOMPONENT_7 Height="5" Key="BUS: /cathodes#Pin6" LocationX="486" LocationY="265" Width="14"/>
+<MAPPEDCOMPONENT_8 Height="51" Key="BUS: /switches#Pin0" LocationX="380" LocationY="286" Width="29"/>
+<MAPPEDCOMPONENT_9 Height="51" Key="BUS: /switches#Pin1" LocationX="340" LocationY="286" Width="29"/>
+<MAPPEDCOMPONENT_a Height="51" Key="BUS: /switches#Pin2" LocationX="295" LocationY="286" Width="29"/>
+<MAPPEDCOMPONENT_b Height="51" Key="BUS: /switches#Pin3" LocationX="252" LocationY="286" Width="29"/>
+<MAPPEDCOMPONENT_c Height="51" Key="BUS: /switches#Pin4" LocationX="209" LocationY="286" Width="29"/>
+<MAPPEDCOMPONENT_d Height="51" Key="BUS: /switches#Pin5" LocationX="168" LocationY="286" Width="29"/>
+<MAPPEDCOMPONENT_e Height="51" Key="BUS: /switches#Pin6" LocationX="125" LocationY="286" Width="29"/>
+<MAPPEDCOMPONENT_f Height="51" Key="BUS: /switches#Pin7" LocationX="83" LocationY="286" Width="29"/>
+<MAPPEDCOMPONENT_10 Height="9" Key="PIN: /PMOD_0_0#Pin0" LocationX="128" LocationY="92" Width="9"/>
+<MAPPEDCOMPONENT_11 Height="9" Key="PIN: /PMOD_0_1#Pin0" LocationX="142" LocationY="92" Width="9"/>
+<MAPPEDCOMPONENT_12 Height="9" Key="PIN: /PMOD_0_2#Pin0" LocationX="155" LocationY="92" Width="9"/>
+<MAPPEDCOMPONENT_13 Height="9" Key="PIN: /PMOD_1_0#Pin0" LocationX="247" LocationY="92" Width="9"/>
+<MAPPEDCOMPONENT_14 Height="9" Key="PIN: /PMOD_1_1#Pin0" LocationX="260" LocationY="92" Width="9"/>
+<MAPPEDCOMPONENT_15 Height="9" Key="PIN: /PMOD_1_2#Pin0" LocationX="274" LocationY="92" Width="9"/>
+<MAPPEDCOMPONENT_16 Height="10" Key="PIN: /anode0#Pin0" LocationX="479" LocationY="288" Width="35"/>
+<MAPPEDCOMPONENT_17 Height="10" Key="PIN: /anode1#Pin0" LocationX="526" LocationY="288" Width="35"/>
+<MAPPEDCOMPONENT_18 Height="10" Key="PIN: /anode2#Pin0" LocationX="574" LocationY="288" Width="35"/>
+<MAPPEDCOMPONENT_19 Height="10" Key="PIN: /anode3#Pin0" LocationX="620" LocationY="288" Width="35"/>
+<MAPPEDCOMPONENT_1a Height="35" Key="PIN: /clk#Pin0" LocationX="332" LocationY="105" Width="35"/>
+</LogisimGoesFPGABoardMapInformation>
