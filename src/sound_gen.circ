@@ -179,13 +179,12 @@ end TCL_Generic;
     <wire from="(500,110)" to="(530,110)"/>
     <wire from="(220,130)" to="(220,220)"/>
     <wire from="(430,40)" to="(430,150)"/>
-    <comp lib="4" loc="(440,80)" name="Register">
-      <a name="width" val="26"/>
-      <a name="label" val="phase"/>
-      <a name="showInTab" val="true"/>
+    <comp lib="0" loc="(310,90)" name="Bit Extender">
+      <a name="in_width" val="16"/>
+      <a name="out_width" val="26"/>
     </comp>
-    <comp loc="(690,180)" name="triangle">
-      <a name="label" val="triangle_1"/>
+    <comp loc="(690,100)" name="square">
+      <a name="label" val="square_1"/>
     </comp>
     <comp lib="0" loc="(340,70)" name="Constant">
       <a name="value" val="0x0"/>
@@ -201,44 +200,27 @@ end TCL_Generic;
       <a name="bit6" val="none"/>
       <a name="bit7" val="none"/>
     </comp>
-    <comp lib="0" loc="(190,40)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="clk"/>
+    <comp lib="0" loc="(420,180)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp loc="(690,180)" name="triangle">
+      <a name="label" val="triangle_1"/>
     </comp>
     <comp loc="(690,60)" name="sin">
       <a name="label" val="sin_1"/>
     </comp>
-    <comp loc="(690,140)" name="sawtooth">
-      <a name="label" val="sawtooth_1"/>
-    </comp>
-    <comp lib="0" loc="(310,90)" name="Bit Extender">
-      <a name="in_width" val="16"/>
-      <a name="out_width" val="26"/>
+    <comp lib="2" loc="(770,110)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
     </comp>
     <comp lib="0" loc="(190,90)" name="Pin">
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
       <a name="label" val="phase_add"/>
     </comp>
-    <comp lib="0" loc="(410,130)" name="Constant"/>
-    <comp lib="2" loc="(770,110)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="width" val="16"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(420,180)" name="Constant">
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="3" loc="(380,110)" name="Adder">
-      <a name="width" val="26"/>
-    </comp>
-    <comp loc="(690,100)" name="square">
-      <a name="label" val="square_1"/>
-    </comp>
-    <comp lib="0" loc="(190,130)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="waveform"/>
+    <comp loc="(690,140)" name="sawtooth">
+      <a name="label" val="sawtooth_1"/>
     </comp>
     <comp lib="0" loc="(950,110)" name="Pin">
       <a name="facing" val="west"/>
@@ -246,6 +228,24 @@ end TCL_Generic;
       <a name="width" val="16"/>
       <a name="label" val="sound"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(410,130)" name="Constant"/>
+    <comp lib="0" loc="(190,130)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="waveform"/>
+    </comp>
+    <comp lib="4" loc="(440,80)" name="Register">
+      <a name="width" val="26"/>
+      <a name="label" val="phase"/>
+      <a name="showInTab" val="true"/>
+    </comp>
+    <comp lib="0" loc="(190,40)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="clk"/>
+    </comp>
+    <comp lib="3" loc="(380,110)" name="Adder">
+      <a name="width" val="26"/>
     </comp>
   </circuit>
   <circuit name="square">
@@ -261,6 +261,31 @@ end TCL_Generic;
     <wire from="(210,50)" to="(240,50)"/>
     <wire from="(250,80)" to="(250,110)"/>
     <wire from="(270,60)" to="(330,60)"/>
+    <comp lib="0" loc="(330,60)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="label" val="sound"/>
+      <a name="labelloc" val="east"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(210,50)" name="Constant">
+      <a name="width" val="16"/>
+      <a name="value" val="0x7fff"/>
+    </comp>
+    <comp lib="2" loc="(270,60)" name="Multiplexer">
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(210,70)" name="Constant">
+      <a name="width" val="16"/>
+      <a name="value" val="0x8001"/>
+    </comp>
+    <comp lib="0" loc="(130,120)" name="Pin">
+      <a name="width" val="26"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="phase"/>
+    </comp>
     <comp lib="0" loc="(170,120)" name="Splitter">
       <a name="fanout" val="1"/>
       <a name="incoming" val="26"/>
@@ -291,31 +316,6 @@ end TCL_Generic;
       <a name="bit24" val="none"/>
       <a name="bit25" val="0"/>
     </comp>
-    <comp lib="0" loc="(330,60)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="label" val="sound"/>
-      <a name="labelloc" val="east"/>
-      <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="0" loc="(210,50)" name="Constant">
-      <a name="width" val="16"/>
-      <a name="value" val="0x7fff"/>
-    </comp>
-    <comp lib="0" loc="(210,70)" name="Constant">
-      <a name="width" val="16"/>
-      <a name="value" val="0x8001"/>
-    </comp>
-    <comp lib="2" loc="(270,60)" name="Multiplexer">
-      <a name="width" val="16"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(130,120)" name="Pin">
-      <a name="width" val="26"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="phase"/>
-    </comp>
   </circuit>
   <circuit name="sin">
     <a name="circuit" val="sin"/>
@@ -327,14 +327,6 @@ end TCL_Generic;
     <wire from="(190,110)" to="(450,110)"/>
     <wire from="(130,120)" to="(170,120)"/>
     <wire from="(480,110)" to="(610,110)"/>
-    <comp lib="0" loc="(610,110)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="label" val="sound"/>
-      <a name="labelloc" val="east"/>
-      <a name="radix" val="10signed"/>
-    </comp>
     <comp lib="0" loc="(170,120)" name="Splitter">
       <a name="fanout" val="1"/>
       <a name="incoming" val="26"/>
@@ -365,13 +357,21 @@ end TCL_Generic;
       <a name="bit24" val="0"/>
       <a name="bit25" val="0"/>
     </comp>
-    <comp lib="9" loc="(480,110)" name="full_sin_lut">
-      <a name="label" val="full_sin_lut_1"/>
-    </comp>
     <comp lib="0" loc="(130,120)" name="Pin">
       <a name="width" val="26"/>
       <a name="tristate" val="false"/>
       <a name="label" val="phase"/>
+    </comp>
+    <comp lib="0" loc="(610,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="label" val="sound"/>
+      <a name="labelloc" val="east"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="9" loc="(480,110)" name="full_sin_lut">
+      <a name="label" val="full_sin_lut_1"/>
     </comp>
   </circuit>
   <circuit name="amplitude">
@@ -381,15 +381,15 @@ end TCL_Generic;
     <a name="clabelfont" val="SansSerif plain 12"/>
     <a name="circuitvhdl" val="false"/>
     <a name="circuitvhdlpath" val=""/>
-    <wire from="(510,60)" to="(690,60)"/>
     <wire from="(200,60)" to="(370,60)"/>
     <wire from="(240,70)" to="(240,120)"/>
     <wire from="(200,120)" to="(240,120)"/>
+    <wire from="(510,60)" to="(690,60)"/>
     <wire from="(240,70)" to="(370,70)"/>
-    <comp lib="0" loc="(200,120)" name="Pin">
+    <comp lib="0" loc="(200,60)" name="Pin">
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="amplitude"/>
+      <a name="label" val="sound_in"/>
       <a name="radix" val="10signed"/>
     </comp>
     <comp lib="6" loc="(370,20)" name="VHDL Entity">
@@ -422,10 +422,10 @@ end Combinatorial;&#13;
       <a name="labelloc" val="east"/>
       <a name="radix" val="10signed"/>
     </comp>
-    <comp lib="0" loc="(200,60)" name="Pin">
+    <comp lib="0" loc="(200,120)" name="Pin">
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="sound_in"/>
+      <a name="label" val="amplitude"/>
       <a name="radix" val="10signed"/>
     </comp>
   </circuit>
@@ -438,13 +438,10 @@ end Combinatorial;&#13;
     <a name="circuitvhdlpath" val=""/>
     <wire from="(190,110)" to="(610,110)"/>
     <wire from="(130,120)" to="(170,120)"/>
-    <comp lib="0" loc="(610,110)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="label" val="sound"/>
-      <a name="labelloc" val="east"/>
-      <a name="radix" val="10signed"/>
+    <comp lib="0" loc="(130,120)" name="Pin">
+      <a name="width" val="26"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="phase"/>
     </comp>
     <comp lib="0" loc="(170,120)" name="Splitter">
       <a name="fanout" val="1"/>
@@ -476,10 +473,13 @@ end Combinatorial;&#13;
       <a name="bit24" val="0"/>
       <a name="bit25" val="0"/>
     </comp>
-    <comp lib="0" loc="(130,120)" name="Pin">
-      <a name="width" val="26"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="phase"/>
+    <comp lib="0" loc="(610,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="label" val="sound"/>
+      <a name="labelloc" val="east"/>
+      <a name="radix" val="10signed"/>
     </comp>
   </circuit>
   <circuit name="triangle">
@@ -507,80 +507,6 @@ end Combinatorial;&#13;
     <wire from="(310,160)" to="(310,170)"/>
     <wire from="(190,160)" to="(220,160)"/>
     <wire from="(470,170)" to="(480,170)"/>
-    <comp lib="3" loc="(290,170)" name="Negator">
-      <a name="width" val="17"/>
-    </comp>
-    <comp lib="3" loc="(520,160)" name="Subtractor">
-      <a name="width" val="17"/>
-    </comp>
-    <comp lib="0" loc="(540,160)" name="Splitter">
-      <a name="fanout" val="1"/>
-      <a name="incoming" val="17"/>
-      <a name="bit0" val="none"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="0"/>
-    </comp>
-    <comp lib="0" loc="(450,220)" name="Constant">
-      <a name="width" val="17"/>
-      <a name="value" val="0x3fff"/>
-    </comp>
-    <comp lib="0" loc="(170,190)" name="Splitter">
-      <a name="fanout" val="1"/>
-      <a name="incoming" val="26"/>
-      <a name="appear" val="right"/>
-      <a name="bit0" val="none"/>
-      <a name="bit1" val="none"/>
-      <a name="bit2" val="none"/>
-      <a name="bit3" val="none"/>
-      <a name="bit4" val="none"/>
-      <a name="bit5" val="none"/>
-      <a name="bit6" val="none"/>
-      <a name="bit7" val="none"/>
-      <a name="bit8" val="none"/>
-      <a name="bit9" val="none"/>
-      <a name="bit10" val="none"/>
-      <a name="bit11" val="none"/>
-      <a name="bit12" val="none"/>
-      <a name="bit13" val="none"/>
-      <a name="bit14" val="none"/>
-      <a name="bit15" val="none"/>
-      <a name="bit16" val="none"/>
-      <a name="bit17" val="none"/>
-      <a name="bit18" val="none"/>
-      <a name="bit19" val="none"/>
-      <a name="bit20" val="none"/>
-      <a name="bit21" val="none"/>
-      <a name="bit22" val="none"/>
-      <a name="bit23" val="none"/>
-      <a name="bit24" val="none"/>
-      <a name="bit25" val="0"/>
-    </comp>
-    <comp lib="0" loc="(610,150)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="label" val="sound"/>
-      <a name="labelloc" val="east"/>
-      <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="2" loc="(450,150)" name="Multiplexer">
-      <a name="width" val="17"/>
-      <a name="enable" val="false"/>
-    </comp>
     <comp lib="0" loc="(130,170)" name="Pin">
       <a name="width" val="26"/>
       <a name="tristate" val="false"/>
@@ -616,6 +542,80 @@ end Combinatorial;&#13;
       <a name="bit24" val="0"/>
       <a name="bit25" val="0"/>
     </comp>
+    <comp lib="3" loc="(290,170)" name="Negator">
+      <a name="width" val="17"/>
+    </comp>
+    <comp lib="0" loc="(540,160)" name="Splitter">
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="17"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="0"/>
+    </comp>
+    <comp lib="0" loc="(610,150)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="label" val="sound"/>
+      <a name="labelloc" val="east"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(450,220)" name="Constant">
+      <a name="width" val="17"/>
+      <a name="value" val="0x3fff"/>
+    </comp>
+    <comp lib="3" loc="(520,160)" name="Subtractor">
+      <a name="width" val="17"/>
+    </comp>
+    <comp lib="0" loc="(170,190)" name="Splitter">
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="26"/>
+      <a name="appear" val="right"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="none"/>
+      <a name="bit3" val="none"/>
+      <a name="bit4" val="none"/>
+      <a name="bit5" val="none"/>
+      <a name="bit6" val="none"/>
+      <a name="bit7" val="none"/>
+      <a name="bit8" val="none"/>
+      <a name="bit9" val="none"/>
+      <a name="bit10" val="none"/>
+      <a name="bit11" val="none"/>
+      <a name="bit12" val="none"/>
+      <a name="bit13" val="none"/>
+      <a name="bit14" val="none"/>
+      <a name="bit15" val="none"/>
+      <a name="bit16" val="none"/>
+      <a name="bit17" val="none"/>
+      <a name="bit18" val="none"/>
+      <a name="bit19" val="none"/>
+      <a name="bit20" val="none"/>
+      <a name="bit21" val="none"/>
+      <a name="bit22" val="none"/>
+      <a name="bit23" val="none"/>
+      <a name="bit24" val="none"/>
+      <a name="bit25" val="0"/>
+    </comp>
+    <comp lib="2" loc="(450,150)" name="Multiplexer">
+      <a name="width" val="17"/>
+      <a name="enable" val="false"/>
+    </comp>
   </circuit>
   <circuit name="sound_gen">
     <a name="circuit" val="sound_gen"/>
@@ -642,10 +642,13 @@ end Combinatorial;&#13;
       <a name="tristate" val="false"/>
       <a name="label" val="clk"/>
     </comp>
-    <comp lib="0" loc="(190,170)" name="Pin">
+    <comp lib="0" loc="(190,90)" name="Pin">
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="amplitude_in"/>
+      <a name="label" val="phase_add"/>
+    </comp>
+    <comp loc="(310,100)" name="wave_gen">
+      <a name="label" val="wave_gen_1"/>
     </comp>
     <comp loc="(390,100)" name="amplitude">
       <a name="label" val="amplitude_1"/>
@@ -663,13 +666,111 @@ end Combinatorial;&#13;
       <a name="tristate" val="false"/>
       <a name="label" val="waveform"/>
     </comp>
-    <comp loc="(310,100)" name="wave_gen">
-      <a name="label" val="wave_gen_1"/>
+    <comp lib="0" loc="(190,170)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="amplitude_in"/>
+    </comp>
+  </circuit>
+  <circuit name="soun_gen_ring_modulator">
+    <a name="circuit" val="soun_gen_ring_modulator"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <a name="circuitvhdl" val="false"/>
+    <a name="circuitvhdlpath" val=""/>
+    <wire from="(330,140)" to="(330,190)"/>
+    <wire from="(430,170)" to="(480,170)"/>
+    <wire from="(290,90)" to="(290,200)"/>
+    <wire from="(240,140)" to="(330,140)"/>
+    <wire from="(190,90)" to="(210,90)"/>
+    <wire from="(480,160)" to="(480,170)"/>
+    <wire from="(290,200)" to="(300,200)"/>
+    <wire from="(640,100)" to="(640,150)"/>
+    <wire from="(190,40)" to="(360,40)"/>
+    <wire from="(190,250)" to="(250,250)"/>
+    <wire from="(220,90)" to="(290,90)"/>
+    <wire from="(360,40)" to="(360,160)"/>
+    <wire from="(220,90)" to="(220,130)"/>
+    <wire from="(190,130)" to="(220,130)"/>
+    <wire from="(720,80)" to="(770,80)"/>
+    <wire from="(210,80)" to="(690,80)"/>
+    <wire from="(210,80)" to="(210,90)"/>
+    <wire from="(190,170)" to="(240,170)"/>
+    <wire from="(670,70)" to="(690,70)"/>
+    <wire from="(360,160)" to="(400,160)"/>
+    <wire from="(330,140)" to="(540,140)"/>
+    <wire from="(670,40)" to="(670,70)"/>
+    <wire from="(570,150)" to="(640,150)"/>
+    <wire from="(320,210)" to="(550,210)"/>
+    <wire from="(290,90)" to="(690,90)"/>
+    <wire from="(250,170)" to="(400,170)"/>
+    <wire from="(360,40)" to="(670,40)"/>
+    <wire from="(640,100)" to="(690,100)"/>
+    <wire from="(250,170)" to="(250,250)"/>
+    <wire from="(240,140)" to="(240,170)"/>
+    <wire from="(480,160)" to="(540,160)"/>
+    <wire from="(550,170)" to="(550,210)"/>
+    <wire from="(330,190)" to="(400,190)"/>
+    <wire from="(360,180)" to="(400,180)"/>
+    <comp lib="2" loc="(570,150)" name="Multiplexer">
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp loc="(720,80)" name="sound_gen">
+      <a name="label" val="sound_gen_2"/>
+    </comp>
+    <comp lib="0" loc="(190,40)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="clk"/>
+    </comp>
+    <comp lib="0" loc="(770,80)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="label" val="sound"/>
+      <a name="labelloc" val="east"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(190,170)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="amplitude_in"/>
+    </comp>
+    <comp lib="0" loc="(300,200)" name="Splitter">
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="8"/>
+      <a name="appear" val="right"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="none"/>
+      <a name="bit4" val="none"/>
+      <a name="bit5" val="none"/>
+      <a name="bit6" val="none"/>
+      <a name="bit7" val="none"/>
     </comp>
     <comp lib="0" loc="(190,90)" name="Pin">
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
       <a name="label" val="phase_add"/>
+    </comp>
+    <comp lib="0" loc="(190,250)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="phase_add_ring"/>
+    </comp>
+    <comp loc="(430,170)" name="sound_gen">
+      <a name="label" val="sound_gen_1"/>
+    </comp>
+    <comp lib="0" loc="(190,130)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="waveform"/>
+    </comp>
+    <comp lib="0" loc="(360,180)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x0"/>
     </comp>
   </circuit>
 </project>
