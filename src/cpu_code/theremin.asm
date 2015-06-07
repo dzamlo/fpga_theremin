@@ -8,10 +8,10 @@ r2 = [2]
 # todo: saut conditionel si boutons
 b play
 
-set_ring:
+setring:
 r0 = [0]
 r1 = [2]
 [5] = r0
 [4] = r1
 # todo: saut conditionel si boutons
-b set_ring
+b setring
