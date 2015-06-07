@@ -26,44 +26,44 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#I/O" name="5"/>
   <lib desc="#HDL-IP" name="6">
     <tool name="VHDL Entity">
-      <a name="content">--------------------------------------------------------------------------------&#13;
--- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains&#13;
--- Project :&#13;
--- File    :&#13;
--- Autor   :&#13;
--- Date    :&#13;
---&#13;
---------------------------------------------------------------------------------&#13;
--- Description :&#13;
---&#13;
---------------------------------------------------------------------------------&#13;
-&#13;
-library ieee;&#13;
-  use ieee.std_logic_1164.all;&#13;
-  --use ieee.numeric_std.all;&#13;
-&#13;
-entity VHDL_Component is&#13;
-  port(&#13;
-  ------------------------------------------------------------------------------&#13;
-  --Insert input ports below&#13;
-    horloge_i  : in  std_logic;                    -- input bit example&#13;
-    val_i      : in  std_logic_vector(3 downto 0); -- input vector example&#13;
-  ------------------------------------------------------------------------------&#13;
-  --Insert output ports below&#13;
-    max_o      : out std_logic;                    -- output bit example&#13;
-    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example&#13;
-    );&#13;
-end VHDL_Component;&#13;
-&#13;
---------------------------------------------------------------------------------&#13;
---Complete your VHDL description below&#13;
-architecture type_architecture of VHDL_Component is&#13;
-&#13;
-&#13;
-begin&#13;
-&#13;
-&#13;
-end type_architecture;&#13;
+      <a name="content">--------------------------------------------------------------------------------
+-- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+library ieee;
+  use ieee.std_logic_1164.all;
+  --use ieee.numeric_std.all;
+
+entity VHDL_Component is
+  port(
+  ------------------------------------------------------------------------------
+  --Insert input ports below
+    horloge_i  : in  std_logic;                    -- input bit example
+    val_i      : in  std_logic_vector(3 downto 0); -- input vector example
+  ------------------------------------------------------------------------------
+  --Insert output ports below
+    max_o      : out std_logic;                    -- output bit example
+    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example
+    );
+end VHDL_Component;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+architecture type_architecture of VHDL_Component is
+
+
+begin
+
+
+end type_architecture;
 </a>
     </tool>
   </lib>
@@ -95,7 +95,7 @@ end TCL_Generic;
     </tool>
   </lib>
   <lib desc="file#adc.circ" name="9"/>
-  <lib desc="file#CPU\cpu.circ" name="10"/>
+  <lib desc="file#CPU/cpu.circ" name="10"/>
   <lib desc="file#seven_segments.circ" name="11"/>
   <lib desc="file#sin.circ" name="12"/>
   <lib desc="file#audio_out.circ" name="13"/>
@@ -110,8 +110,8 @@ end TCL_Generic;
   </options>
   <mappings>
     <tool lib="8" map="Button2" name="Menu Tool"/>
-    <tool lib="8" map="Button3" name="Menu Tool"/>
     <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
   </mappings>
   <toolbar>
     <tool lib="8" name="Poke Tool"/>
@@ -144,53 +144,48 @@ end TCL_Generic;
     <a name="circuitvhdlpath" val=""/>
     <wire from="(220,170)" to="(240,170)"/>
     <wire from="(230,30)" to="(230,90)"/>
-    <wire from="(750,570)" to="(800,570)"/>
-    <wire from="(370,350)" to="(380,350)"/>
     <wire from="(130,100)" to="(190,100)"/>
-    <wire from="(980,390)" to="(980,470)"/>
+    <wire from="(370,350)" to="(380,350)"/>
+    <wire from="(750,570)" to="(800,570)"/>
     <wire from="(310,100)" to="(860,100)"/>
+    <wire from="(980,390)" to="(980,470)"/>
     <wire from="(130,170)" to="(190,170)"/>
     <wire from="(320,360)" to="(330,360)"/>
-    <wire from="(380,350)" to="(380,360)"/>
-    <wire from="(800,350)" to="(880,350)"/>
     <wire from="(330,350)" to="(340,350)"/>
+    <wire from="(380,350)" to="(380,360)"/>
     <wire from="(540,450)" to="(540,540)"/>
     <wire from="(290,580)" to="(460,580)"/>
     <wire from="(470,410)" to="(490,410)"/>
     <wire from="(480,450)" to="(480,470)"/>
     <wire from="(520,430)" to="(690,430)"/>
-    <wire from="(830,580)" to="(840,580)"/>
     <wire from="(990,440)" to="(1020,440)"/>
     <wire from="(330,350)" to="(330,360)"/>
     <wire from="(190,550)" to="(190,560)"/>
     <wire from="(480,640)" to="(640,640)"/>
     <wire from="(430,400)" to="(490,400)"/>
     <wire from="(1000,370)" to="(1000,410)"/>
+    <wire from="(670,370)" to="(880,370)"/>
     <wire from="(480,490)" to="(490,490)"/>
     <wire from="(480,450)" to="(490,450)"/>
     <wire from="(980,550)" to="(980,580)"/>
     <wire from="(670,590)" to="(800,590)"/>
     <wire from="(540,540)" to="(630,540)"/>
-    <wire from="(770,440)" to="(840,440)"/>
     <wire from="(930,560)" to="(1000,560)"/>
     <wire from="(310,160)" to="(900,160)"/>
     <wire from="(850,570)" to="(900,570)"/>
-    <wire from="(460,420)" to="(460,580)"/>
     <wire from="(970,530)" to="(970,570)"/>
-    <wire from="(770,370)" to="(770,440)"/>
+    <wire from="(460,420)" to="(460,580)"/>
     <wire from="(480,490)" to="(480,510)"/>
     <wire from="(190,560)" to="(210,560)"/>
-    <wire from="(930,580)" to="(980,580)"/>
     <wire from="(840,360)" to="(880,360)"/>
+    <wire from="(930,580)" to="(980,580)"/>
     <wire from="(860,400)" to="(860,410)"/>
     <wire from="(590,550)" to="(630,550)"/>
     <wire from="(290,560)" to="(290,580)"/>
     <wire from="(320,110)" to="(320,360)"/>
     <wire from="(880,550)" to="(900,550)"/>
     <wire from="(960,550)" to="(960,590)"/>
-    <wire from="(770,370)" to="(780,370)"/>
     <wire from="(460,420)" to="(490,420)"/>
-    <wire from="(840,580)" to="(850,580)"/>
     <wire from="(270,170)" to="(280,170)"/>
     <wire from="(780,560)" to="(800,560)"/>
     <wire from="(160,550)" to="(190,550)"/>
@@ -199,16 +194,18 @@ end TCL_Generic;
     <wire from="(470,340)" to="(490,340)"/>
     <wire from="(230,160)" to="(240,160)"/>
     <wire from="(1000,410)" to="(1020,410)"/>
+    <wire from="(480,530)" to="(490,530)"/>
     <wire from="(930,570)" to="(970,570)"/>
     <wire from="(310,390)" to="(340,390)"/>
-    <wire from="(840,440)" to="(840,580)"/>
     <wire from="(520,440)" to="(550,440)"/>
     <wire from="(910,360)" to="(1010,360)"/>
     <wire from="(480,470)" to="(490,470)"/>
     <wire from="(670,640)" to="(760,640)"/>
+    <wire from="(520,470)" to="(670,470)"/>
     <wire from="(910,350)" to="(1020,350)"/>
     <wire from="(520,450)" to="(540,450)"/>
     <wire from="(970,530)" to="(1010,530)"/>
+    <wire from="(480,510)" to="(480,530)"/>
     <wire from="(560,650)" to="(640,650)"/>
     <wire from="(520,460)" to="(530,460)"/>
     <wire from="(860,110)" to="(900,110)"/>
@@ -216,7 +213,6 @@ end TCL_Generic;
     <wire from="(230,90)" to="(230,160)"/>
     <wire from="(270,90)" to="(280,90)"/>
     <wire from="(310,90)" to="(900,90)"/>
-    <wire from="(800,370)" to="(880,370)"/>
     <wire from="(910,390)" to="(980,390)"/>
     <wire from="(890,560)" to="(900,560)"/>
     <wire from="(270,180)" to="(310,180)"/>
@@ -230,68 +226,59 @@ end TCL_Generic;
     <wire from="(860,170)" to="(860,180)"/>
     <wire from="(270,110)" to="(320,110)"/>
     <wire from="(910,370)" to="(1000,370)"/>
+    <wire from="(670,370)" to="(670,470)"/>
     <wire from="(660,550)" to="(750,550)"/>
-    <wire from="(800,360)" to="(800,370)"/>
     <wire from="(310,180)" to="(310,390)"/>
     <wire from="(760,600)" to="(800,600)"/>
     <wire from="(690,580)" to="(800,580)"/>
     <wire from="(250,560)" to="(290,560)"/>
     <wire from="(760,600)" to="(760,640)"/>
     <wire from="(550,440)" to="(550,630)"/>
-    <wire from="(820,380)" to="(880,380)"/>
     <wire from="(860,180)" to="(900,180)"/>
-    <wire from="(270,100)" to="(280,100)"/>
+    <wire from="(820,380)" to="(880,380)"/>
     <wire from="(130,30)" to="(230,30)"/>
-    <wire from="(860,400)" to="(880,400)"/>
+    <wire from="(270,100)" to="(280,100)"/>
     <wire from="(310,170)" to="(860,170)"/>
-    <wire from="(850,570)" to="(850,580)"/>
+    <wire from="(860,400)" to="(880,400)"/>
     <wire from="(530,610)" to="(650,610)"/>
+    <wire from="(850,570)" to="(850,580)"/>
     <wire from="(480,510)" to="(490,510)"/>
-    <wire from="(380,360)" to="(490,360)"/>
     <wire from="(390,380)" to="(490,380)"/>
+    <wire from="(380,360)" to="(490,360)"/>
     <wire from="(270,160)" to="(280,160)"/>
     <wire from="(230,30)" to="(270,30)"/>
     <wire from="(470,370)" to="(490,370)"/>
-    <wire from="(480,430)" to="(490,430)"/>
-    <wire from="(160,520)" to="(430,520)"/>
     <wire from="(1010,380)" to="(1020,380)"/>
+    <wire from="(160,520)" to="(430,520)"/>
+    <wire from="(480,430)" to="(490,430)"/>
     <wire from="(530,460)" to="(530,610)"/>
     <wire from="(370,390)" to="(390,390)"/>
     <wire from="(860,100)" to="(860,110)"/>
+    <wire from="(830,580)" to="(850,580)"/>
     <wire from="(990,380)" to="(990,440)"/>
-    <wire from="(620,560)" to="(630,560)"/>
-    <wire from="(850,410)" to="(860,410)"/>
     <wire from="(390,380)" to="(390,390)"/>
+    <wire from="(850,410)" to="(860,410)"/>
+    <wire from="(620,560)" to="(630,560)"/>
     <wire from="(1000,570)" to="(1010,570)"/>
     <wire from="(550,630)" to="(640,630)"/>
     <wire from="(430,400)" to="(430,520)"/>
     <wire from="(980,550)" to="(1010,550)"/>
-    <wire from="(850,390)" to="(880,390)"/>
     <wire from="(230,90)" to="(240,90)"/>
+    <wire from="(850,390)" to="(880,390)"/>
     <wire from="(630,600)" to="(650,600)"/>
     <wire from="(960,590)" to="(1010,590)"/>
-    <comp lib="15" loc="(370,350)" name="dist_correct">
-      <a name="label" val="dist_correct_1"/>
-    </comp>
+    <comp lib="1" loc="(310,170)" name="NOT Gate"/>
     <comp lib="0" loc="(130,170)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="PMOD_1_1"/>
     </comp>
-    <comp lib="0" loc="(480,430)" name="Constant"/>
-    <comp loc="(660,550)" name="phase_add_correct"/>
-    <comp lib="0" loc="(1020,470)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="anode3"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(220,170)" name="NOT Gate"/>
-    <comp lib="13" loc="(930,540)" name="cs4344_mono">
-      <a name="label" val="cs4344_mono_1"/>
-    </comp>
     <comp lib="0" loc="(850,410)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="clk"/>
+    </comp>
+    <comp lib="14" loc="(830,580)" name="soun_gen_ring_modulator"/>
+    <comp lib="0" loc="(890,560)" name="Constant">
+      <a name="value" val="0x0"/>
     </comp>
     <comp lib="0" loc="(1010,550)" name="Pin">
       <a name="facing" val="west"/>
@@ -299,43 +286,8 @@ end TCL_Generic;
       <a name="label" val="PMOD_2_1"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(900,90)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="PMOD_0_0"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(470,410)" name="Constant"/>
-    <comp lib="0" loc="(780,370)" name="Splitter">
-      <a name="incoming" val="16"/>
-      <a name="bit0" val="1"/>
-      <a name="bit2" val="1"/>
-      <a name="bit3" val="1"/>
-      <a name="bit4" val="1"/>
-      <a name="bit5" val="1"/>
-      <a name="bit6" val="1"/>
-      <a name="bit7" val="1"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-    </comp>
-    <comp lib="0" loc="(160,520)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="switches"/>
-    </comp>
-    <comp lib="0" loc="(1010,590)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="PMOD_2_3"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(220,100)" name="NOT Gate"/>
+    <comp loc="(670,640)" name="phase_add_correct"/>
+    <comp loc="(660,550)" name="phase_add_correct"/>
     <comp lib="0" loc="(1010,530)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -345,21 +297,64 @@ end TCL_Generic;
     <comp lib="0" loc="(850,390)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(900,160)" name="Pin">
+    <comp lib="1" loc="(310,100)" name="NOT Gate"/>
+    <comp lib="0" loc="(1020,380)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="PMOD_1_0"/>
+      <a name="label" val="anode0"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(1020,410)" name="Pin">
+    <comp lib="0" loc="(470,390)" name="Constant"/>
+    <comp lib="0" loc="(470,410)" name="Constant"/>
+    <comp lib="0" loc="(840,360)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(900,110)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="anode1"/>
+      <a name="label" val="PMOD_0_2"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(480,640)" name="Constant">
       <a name="width" val="16"/>
       <a name="value" val="0x85"/>
+    </comp>
+    <comp lib="0" loc="(820,380)" name="Constant"/>
+    <comp lib="11" loc="(910,350)" name="bytes_display">
+      <a name="label" val="bytes_debug"/>
+    </comp>
+    <comp lib="0" loc="(160,550)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="buttons"/>
+    </comp>
+    <comp lib="0" loc="(1010,590)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="PMOD_2_3"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(470,370)" name="Constant"/>
+    <comp lib="9" loc="(270,90)" name="tlc548">
+      <a name="label" val="tlc548_1"/>
+    </comp>
+    <comp lib="13" loc="(930,540)" name="cs4344_mono">
+      <a name="label" val="cs4344_mono_1"/>
+    </comp>
+    <comp lib="0" loc="(620,560)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x2"/>
+    </comp>
+    <comp lib="15" loc="(370,390)" name="dist_correct">
+      <a name="label" val="dist_correct_2"/>
+    </comp>
+    <comp lib="0" loc="(130,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="PMOD_0_1"/>
+    </comp>
+    <comp lib="0" loc="(560,650)" name="Constant">
+      <a name="width" val="4"/>
+      <a name="value" val="0x2"/>
     </comp>
     <comp lib="0" loc="(1010,570)" name="Pin">
       <a name="facing" val="west"/>
@@ -367,23 +362,44 @@ end TCL_Generic;
       <a name="label" val="PMOD_2_2"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(130,30)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="clk"/>
-    </comp>
-    <comp lib="0" loc="(630,600)" name="Constant">
-      <a name="width" val="8"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="10" loc="(520,390)" name="CPU_Interface">
-      <a name="label" val="CPU_Interface_1"/>
-    </comp>
-    <comp lib="0" loc="(840,360)" name="Constant"/>
     <comp lib="0" loc="(900,180)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="PMOD_1_2"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(220,170)" name="NOT Gate"/>
+    <comp lib="0" loc="(1020,410)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="anode1"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="10" loc="(520,390)" name="CPU_Interface">
+      <a name="label" val="CPU_Interface_1"/>
+    </comp>
+    <comp lib="0" loc="(480,450)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(470,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
+    </comp>
+    <comp lib="0" loc="(1020,440)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="anode2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(1020,470)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="anode3"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(630,600)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x0"/>
     </comp>
     <comp lib="0" loc="(1020,350)" name="Pin">
       <a name="facing" val="west"/>
@@ -392,43 +408,30 @@ end TCL_Generic;
       <a name="label" val="cathodes"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(130,100)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="PMOD_0_1"/>
+    <comp lib="15" loc="(370,350)" name="dist_correct">
+      <a name="label" val="dist_correct_1"/>
     </comp>
-    <comp lib="0" loc="(890,560)" name="Constant">
-      <a name="value" val="0x0"/>
+    <comp lib="0" loc="(250,560)" name="Bit Extender">
+      <a name="in_width" val="4"/>
+      <a name="out_width" val="8"/>
     </comp>
-    <comp lib="0" loc="(780,560)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="clk"/>
+    <comp lib="1" loc="(220,100)" name="NOT Gate"/>
+    <comp lib="0" loc="(900,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="PMOD_1_0"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(590,550)" name="Constant">
       <a name="width" val="16"/>
       <a name="value" val="0x85"/>
     </comp>
-    <comp lib="0" loc="(470,390)" name="Constant"/>
-    <comp lib="1" loc="(310,170)" name="NOT Gate"/>
-    <comp lib="0" loc="(270,30)" name="Tunnel">
-      <a name="label" val="clk"/>
-    </comp>
-    <comp lib="9" loc="(270,160)" name="tlc548">
-      <a name="label" val="tlc548_2"/>
-    </comp>
-    <comp lib="9" loc="(270,90)" name="tlc548">
-      <a name="label" val="tlc548_1"/>
-    </comp>
-    <comp lib="1" loc="(310,160)" name="NOT Gate"/>
     <comp lib="0" loc="(880,550)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="clk"/>
     </comp>
-    <comp lib="0" loc="(560,650)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x2"/>
-    </comp>
-    <comp lib="0" loc="(470,340)" name="Tunnel">
-      <a name="facing" val="east"/>
+    <comp lib="0" loc="(130,30)" name="Pin">
+      <a name="tristate" val="false"/>
       <a name="label" val="clk"/>
     </comp>
     <comp lib="0" loc="(670,590)" name="Splitter">
@@ -450,52 +453,30 @@ end TCL_Generic;
       <a name="bit14" val="1"/>
       <a name="bit15" val="0"/>
     </comp>
-    <comp lib="1" loc="(310,100)" name="NOT Gate"/>
-    <comp lib="11" loc="(910,350)" name="bytes_display">
-      <a name="label" val="bytes_debug"/>
+    <comp lib="9" loc="(270,160)" name="tlc548">
+      <a name="label" val="tlc548_2"/>
     </comp>
-    <comp lib="0" loc="(900,110)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="PMOD_0_2"/>
-      <a name="labelloc" val="east"/>
-    </comp>
+    <comp lib="1" loc="(310,160)" name="NOT Gate"/>
     <comp lib="1" loc="(310,90)" name="NOT Gate"/>
-    <comp lib="0" loc="(470,370)" name="Constant"/>
-    <comp lib="0" loc="(620,560)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x2"/>
+    <comp lib="0" loc="(780,560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
     </comp>
-    <comp lib="0" loc="(480,450)" name="Constant">
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(1020,440)" name="Pin">
+    <comp lib="0" loc="(900,90)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="anode2"/>
+      <a name="label" val="PMOD_0_0"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="15" loc="(370,390)" name="dist_correct">
-      <a name="label" val="dist_correct_2"/>
-    </comp>
-    <comp lib="0" loc="(1020,380)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="anode0"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(250,560)" name="Bit Extender">
-      <a name="in_width" val="4"/>
-      <a name="out_width" val="8"/>
-    </comp>
-    <comp lib="14" loc="(830,580)" name="soun_gen_ring_modulator"/>
-    <comp lib="0" loc="(160,550)" name="Pin">
-      <a name="width" val="4"/>
+    <comp lib="0" loc="(160,520)" name="Pin">
+      <a name="width" val="8"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="buttons"/>
+      <a name="label" val="switches"/>
     </comp>
-    <comp loc="(670,640)" name="phase_add_correct"/>
-    <comp lib="0" loc="(820,380)" name="Constant"/>
+    <comp lib="0" loc="(480,430)" name="Constant"/>
+    <comp lib="0" loc="(270,30)" name="Tunnel">
+      <a name="label" val="clk"/>
+    </comp>
   </circuit>
   <circuit name="phase_add_correct">
     <a name="circuit" val="phase_add_correct"/>
@@ -522,9 +503,27 @@ end TCL_Generic;
     <wire from="(460,110)" to="(470,110)"/>
     <wire from="(170,130)" to="(280,130)"/>
     <wire from="(380,110)" to="(400,110)"/>
+    <comp lib="0" loc="(170,170)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="shift"/>
+    </comp>
+    <comp lib="3" loc="(510,120)" name="Adder">
+      <a name="width" val="16"/>
+    </comp>
     <comp lib="0" loc="(370,120)" name="Bit Extender"/>
+    <comp lib="0" loc="(170,90)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="phase_add_in"/>
+    </comp>
     <comp lib="3" loc="(440,120)" name="Shifter">
       <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(170,130)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="min"/>
     </comp>
     <comp lib="0" loc="(590,120)" name="Pin">
       <a name="facing" val="west"/>
@@ -532,24 +531,6 @@ end TCL_Generic;
       <a name="width" val="16"/>
       <a name="label" val="phase_add_out"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(170,90)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="phase_add_in"/>
-    </comp>
-    <comp lib="3" loc="(510,120)" name="Adder">
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="0" loc="(170,170)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="shift"/>
-    </comp>
-    <comp lib="0" loc="(170,130)" name="Pin">
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="min"/>
     </comp>
   </circuit>
 </project>
