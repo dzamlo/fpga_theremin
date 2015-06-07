@@ -917,27 +917,127 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   
 		<comp lib="0" loc="(260, 140)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b1100000000000000"/>
+			<a name="value" val="0b1000101000001000"/>
 		</comp>
 		<comp lib="0" loc="(300, 150)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b1100001000000001"/>
+			<a name="value" val="0b1000110000000001"/>
 		</comp>
 		<comp lib="0" loc="(260, 160)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b0010000000000000"/>
+			<a name="value" val="0b1101110000001000"/>
 		</comp>
 		<comp lib="0" loc="(300, 170)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b1101000000000110"/>
+			<a name="value" val="0b1100000000000000"/>
 		</comp>
 		<comp lib="0" loc="(260, 180)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b1101001000000111"/>
+			<a name="value" val="0b1100001000000001"/>
 		</comp>
 		<comp lib="0" loc="(300, 190)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b1011111111111011"/>
+			<a name="value" val="0b1100010000000010"/>
+		</comp>
+		<comp lib="0" loc="(260, 200)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1101000000000110"/>
+		</comp>
+		<comp lib="0" loc="(300, 210)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1101001000000111"/>
+		</comp>
+		<comp lib="0" loc="(260, 220)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1101010000000100"/>
+		</comp>
+		<comp lib="0" loc="(300, 230)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b0110100011011000"/>
+		</comp>
+		<comp lib="0" loc="(260, 240)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1100011000000011"/>
+		</comp>
+		<comp lib="0" loc="(300, 250)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b0101011011101000"/>
+		</comp>
+		<comp lib="0" loc="(260, 260)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b0110110100100000"/>
+		</comp>
+		<comp lib="0" loc="(300, 270)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1010100011110100"/>
+		</comp>
+		<comp lib="0" loc="(260, 280)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b0101110100011000"/>
+		</comp>
+		<comp lib="0" loc="(300, 290)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1010100000000010"/>
+		</comp>
+		<comp lib="0" loc="(260, 300)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1011111111110001"/>
+		</comp>
+		<comp lib="0" loc="(300, 310)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1000110000000010"/>
+		</comp>
+		<comp lib="0" loc="(260, 320)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1101110000001000"/>
+		</comp>
+		<comp lib="0" loc="(300, 330)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1100000000000000"/>
+		</comp>
+		<comp lib="0" loc="(260, 340)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1100010000000010"/>
+		</comp>
+		<comp lib="0" loc="(300, 350)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1101000000000101"/>
+		</comp>
+		<comp lib="0" loc="(260, 360)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1101010000000100"/>
+		</comp>
+		<comp lib="0" loc="(300, 370)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b0110100011011000"/>
+		</comp>
+		<comp lib="0" loc="(260, 380)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1100011000000011"/>
+		</comp>
+		<comp lib="0" loc="(300, 390)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b0101011011101000"/>
+		</comp>
+		<comp lib="0" loc="(260, 400)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b0110110100100000"/>
+		</comp>
+		<comp lib="0" loc="(300, 410)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1010100011110110"/>
+		</comp>
+		<comp lib="0" loc="(260, 420)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b0101110100011000"/>
+		</comp>
+		<comp lib="0" loc="(300, 430)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1010100011100100"/>
+		</comp>
+		<comp lib="0" loc="(260, 440)" name="Constant">
+			<a name="width" val="16"/>
+			<a name="value" val="0b1011111111110011"/>
 		</comp>
 	</circuit>
 	
