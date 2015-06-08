@@ -921,11 +921,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 		</comp>
 		<comp lib="0" loc="(300, 150)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b1000110000000001"/>
+			<a name="value" val="0b1000000000000001"/>
 		</comp>
 		<comp lib="0" loc="(260, 160)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b1101110000001000"/>
+			<a name="value" val="0b1101000000001000"/>
 		</comp>
 		<comp lib="0" loc="(300, 170)" name="Constant">
 			<a name="width" val="16"/>
@@ -965,7 +965,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 		</comp>
 		<comp lib="0" loc="(260, 260)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b0110110100100000"/>
+			<a name="value" val="0b0110000100100000"/>
 		</comp>
 		<comp lib="0" loc="(300, 270)" name="Constant">
 			<a name="width" val="16"/>
@@ -973,7 +973,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 		</comp>
 		<comp lib="0" loc="(260, 280)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b0101110100011000"/>
+			<a name="value" val="0b0101000100011000"/>
 		</comp>
 		<comp lib="0" loc="(300, 290)" name="Constant">
 			<a name="width" val="16"/>
@@ -985,11 +985,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 		</comp>
 		<comp lib="0" loc="(300, 310)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b1000110000000010"/>
+			<a name="value" val="0b1000000000000010"/>
 		</comp>
 		<comp lib="0" loc="(260, 320)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b1101110000001000"/>
+			<a name="value" val="0b1101000000001000"/>
 		</comp>
 		<comp lib="0" loc="(300, 330)" name="Constant">
 			<a name="width" val="16"/>
@@ -1021,7 +1021,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 		</comp>
 		<comp lib="0" loc="(260, 400)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b0110110100100000"/>
+			<a name="value" val="0b0110000100100000"/>
 		</comp>
 		<comp lib="0" loc="(300, 410)" name="Constant">
 			<a name="width" val="16"/>
@@ -1029,7 +1029,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 		</comp>
 		<comp lib="0" loc="(260, 420)" name="Constant">
 			<a name="width" val="16"/>
-			<a name="value" val="0b0101110100011000"/>
+			<a name="value" val="0b0101000100011000"/>
 		</comp>
 		<comp lib="0" loc="(300, 430)" name="Constant">
 			<a name="width" val="16"/>

@@ -5,7 +5,6 @@
 # r3: Current buttons state
 # r4: Previous buttons state
 # r5: Button mask
-# r6: tmp
 #
 # [0]: Left ADC
 # [1]: Right ADC
@@ -20,8 +19,8 @@
 r5 = 0b00001000
 
 play:
-r6 = 1
-[8] = r6
+r0 = 1
+[8] = r0
 r0 = [0]
 r1 = [1]
 r2 = [2]
@@ -33,16 +32,16 @@ r4 = r3 or r3
 r3 = [3]
 r3 = r3 and r5
 # if btn == 0 && previous btn == 1 => setring else play
-r6 = r4 or r4
+r0 = r4 or r4
 bcz play
-r6 = r4 and r3
+r0 = r4 and r3
 bcz setring
 b play
 
 
 setring:
-r6 = 2
-[8] = r6
+r0 = 2
+[8] = r0
 r0 = [0]
 r2 = [2]
 [5] = r0
@@ -52,8 +51,8 @@ r4 = r3 or r3
 r3 = [3]
 r3 = r3 and r5
 # if btn == 0 && previous btn == 1 => setring else play
-r6 = r4 or r4
+r0 = r4 or r4
 bcz setring
-r6 = r4 and r3
+r0 = r4 and r3
 bcz play
 b setring
