@@ -1,5 +1,5 @@
 # register allocation:
-# r0: Left ADC value
+# r0: Left ADC value / tmp
 # r1: Right ADC value
 # r2: Switches state
 # r3: Current buttons state
