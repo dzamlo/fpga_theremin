@@ -1,4 +1,4 @@
--- This is a slightly modified version of the cde provided by the professor.
+-- This is a slightly modified version of the code provided by the professor.
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
